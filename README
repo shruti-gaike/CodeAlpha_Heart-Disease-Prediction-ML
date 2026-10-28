@@ -1,0 +1,127 @@
+# Heart Disease Prediction Using Machine Learning
+
+## Project Overview
+
+This project uses Machine Learning classification techniques to predict whether a patient belongs to the heart disease or no heart disease class based on medical attributes.
+
+The project uses the Cleveland Heart Disease dataset and a Random Forest classifier.
+
+**This is an educational project and is not intended for medical diagnosis.**
+
+## Objective
+
+The main objective is to explore medical data, identify patterns, train a Machine Learning model, and evaluate its classification performance.
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* VS Code
+
+## Dataset
+
+The project uses the processed Cleveland Heart Disease dataset.
+
+The dataset contains 303 patient records and 14 original attributes, including the original target column.
+
+Some of the features include:
+
+* Age
+* Sex
+* Chest pain type
+* Resting blood pressure
+* Cholesterol
+* Maximum heart rate achieved
+* Exercise-induced angina
+* ST depression
+* Number of major vessels
+* Thalassemia-related category
+
+The original target is converted into two classes:
+
+* 0: No heart disease indicated
+* 1: Heart disease indicated
+
+Missing values are present in some dataset columns and should be handled before model training.
+
+**Dataset source:** Add the exact Kaggle dataset page you downloaded the files from.
+
+## Project Workflow
+
+1. Load the dataset.
+2. Assign column names.
+3. Explore the dataset.
+4. Check missing values.
+5. Perform data cleaning.
+6. Generate statistical summaries.
+7. Visualize target distribution.
+8. Analyze patient age distribution.
+9. Generate a correlation heatmap.
+10. Train a Random Forest classifier.
+11. Evaluate the model using a confusion matrix and classification report.
+12. Display the model accuracy.
+
+## Model Used
+
+**Random Forest Classifier**
+
+Random Forest combines multiple decision trees to make a classification prediction.
+
+## Results
+
+The current model evaluation produced approximately 88.52% accuracy on the test set.
+
+The confusion matrix contains:
+
+* True negatives: 27
+* False positives: 6
+* False negatives: 1
+* True positives: 27
+
+These results apply only to the current dataset split and model configuration. They do not establish clinical accuracy or suitability for medical use.
+
+
+
+### 5. Model Accuracy
+
+![Model Accuracy](screenshots/model_accuracy.png)
+
+## How to Run the Project
+
+### Step 1: Install Python
+
+Install Python on your computer.
+
+### Step 2: Install the required libraries
+
+Open a terminal in the project directory and run:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Add the dataset
+
+Place the processed Cleveland dataset file named `processed.cleveland.data` in the same directory as the Python script.
+
+### Step 4: Run the program
+
+Execute:
+
+```bash
+python heart_disease_prediction.py
+```
+
+## Learning Outcomes
+
+* Understanding structured medical datasets.
+* Performing exploratory data analysis.
+* Handling missing values.
+* Visualizing data using Python.
+* Building a classification model.
+* Evaluating a model using accuracy and a confusion matrix.
+
